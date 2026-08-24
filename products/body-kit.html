@@ -1,77 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Body Kit - Jworks Autocraft</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Body Kit | JWorks Autocraft</title>
+
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    .product-detail {
+      padding: 70px 0;
+    }
+
+    .product-detail h2 {
+      font-size: 42px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    .product-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .product-hero img {
+      width: 100%;
+      max-width: 550px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .product-info-detail h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 15px;
+    }
+
+    .product-price {
+      color: #d90429;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .product-info-detail p {
+      color: #aaa;
+      margin-bottom: 18px;
+    }
+
+    .detail-section {
+      margin-top: 50px;
+    }
+
+    .detail-section h2 {
+      font-size: 30px;
+      border-left: 4px solid #d90429;
+      padding-left: 15px;
+      margin-bottom: 25px;
+    }
+
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #151515;
+      border: 1px solid #292929;
+      overflow: hidden;
+    }
+
+    .spec-table th,
+    .spec-table td {
+      padding: 18px 20px;
+      text-align: left;
+      border-bottom: 1px solid #292929;
+    }
+
+    .spec-table th {
+      background: #d90429;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .spec-table td:first-child {
+      color: #d90429;
+      font-weight: bold;
+      width: 35%;
+    }
+
+    .spec-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .back-button {
+      margin-top: 40px;
+    }
+
+    @media (max-width: 800px) {
+      .product-hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .product-info-detail h1 {
+        font-size: 38px;
+      }
+
+      .product-detail h2 {
+        font-size: 32px;
+      }
+
+      .spec-table th,
+      .spec-table td {
+        padding: 12px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Jworks Autocraft</h1>
+  <header>
 
-     <nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../about.html">About</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-  </ul>
-</nav>
-    </header>
+    <h1>JWorks Autocraft</h1>
 
-    <main>
-        <h1>Automotive Body Kit</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        <img src="../bodykit.png" alt="bodykit"> <width="500">
+  </header>
+
+
+  <main>
+
+    <section class="product-detail">
+
+      <div class="product-hero">
+
+        <div>
+          <img
+            src="../bodykit.png"
+            alt="JWorks Automotive Body Kit"
+          >
+        </div>
+
+
+        <div class="product-info-detail">
+
+          <h1>Automotive Body Kit</h1>
+
+          <p class="product-price">
+            ₱25,000 - ₱850,000
+          </p>
+
+          <p>
+            Give your vehicle a more aggressive and distinctive
+            appearance with our automotive body kit.
+          </p>
+
+          <p>
+            Designed for car enthusiasts who want to improve the
+            appearance and style of their vehicle while maintaining
+            a clean and practical design.
+          </p>
+
+          <a class="button" href="../contact.html">
+            Inquire Now
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="detail-section">
 
         <h2>Product Description</h2>
 
         <p>
-            Our automotive body kit is designed for car enthusiasts who want
-            to improve the appearance and style of their vehicle. It provides
-            a sportier look while maintaining a clean and practical design.
+          Our automotive body kit is designed for car enthusiasts
+          who want to improve the appearance and style of their
+          vehicle. It provides a sportier look while maintaining
+          a clean and practical design.
         </p>
 
         <p>
-            The body kit is suitable for automotive customization projects
-            and can be used by customers who want to give their vehicle a
-            more distinctive appearance.
+          The body kit is suitable for automotive customization
+          projects and can be used by customers who want to give
+          their vehicle a more distinctive appearance.
         </p>
+
+      </div>
+
+
+      <div class="detail-section">
 
         <h2>Specifications</h2>
 
-        <table border="1">
-            <tr>
-                <th>Specification</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Products</td>
-                <td>Automotive Body Kit</td>
-            </tr>
-            <tr>
-                <td>Material</td>
-                <td>Fiberglass</td>
-            </tr>
-            <tr>
-                <td>Colour</td>
-                <td>Black</td>
-            </tr>
-            <tr>
-                <td>Type</td>
-                <td>Car Body Kit</td>
-            </tr>
-            <tr>
-                <td>Price</td>
-                <td>₱25,000</td>
-            </tr>
-        </table>
-    </main>
+        <table class="spec-table">
 
-    <footer>
-        <p>&copy; 2026 Jworks Autocraft</p>
-    </footer>
+          <tr>
+            <th>Specification</th>
+            <th>Details</th>
+          </tr>
+
+          <tr>
+            <td>Product</td>
+            <td>Automotive Body Kit</td>
+          </tr>
+
+          <tr>
+            <td>Material</td>
+            <td>Fiberglass</td>
+          </tr>
+
+          <tr>
+            <td>Colour</td>
+            <td>Black</td>
+          </tr>
+
+          <tr>
+            <td>Type</td>
+            <td>Car Body Kit</td>
+          </tr>
+
+          <tr>
+            <td>Price</td>
+            <td>₱25,000</td>
+          </tr>
+
+        </table>
+
+      </div>
+
+
+      <div class="back-button">
+
+        <a class="button" href="../index.html">
+          ← Back to Products
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      &copy; 2026 JWorks Autocraft. All Rights Reserved.
+    </p>
+
+  </footer>
 
 </body>
+
 </html>

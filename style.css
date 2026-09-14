@@ -269,6 +269,120 @@ main {
 }
 
 /* =========================
+   ORDER / ENQUIRY FORM
+   ========================= */
+
+.order-section {
+  margin-top: 70px;
+  padding: 40px;
+  background: #151515;
+  border: 1px solid #292929;
+  border-top: 4px solid #d90429;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.order-section h2 {
+  margin-bottom: 10px;
+}
+
+.order-intro {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-form label {
+  color: #ddd;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.order-form input[type="number"],
+.order-form input[type="email"] {
+  width: 100%;
+  padding: 14px;
+  background: #0d0d0d;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.order-form input:focus {
+  outline: 2px solid #d90429;
+  outline-offset: 2px;
+  border-color: #d90429;
+}
+
+.delivery-options {
+  margin-top: 15px;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #101010;
+}
+
+.delivery-options legend {
+  color: #d90429;
+  font-weight: bold;
+  padding: 0 8px;
+  text-transform: uppercase;
+}
+
+.radio-option,
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+  color: #ccc !important;
+  font-weight: normal !important;
+}
+
+.radio-option input,
+.checkbox-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: #d90429;
+}
+
+.extras-title {
+  color: #ddd;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.order-form button {
+  margin-top: 25px;
+  padding: 15px 25px;
+  background: #d90429;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.order-form button:hover {
+  background: #b80322;
+}
+
+.order-form button:focus {
+  outline: 3px solid white;
+  outline-offset: 3px;
+}
+
+/* =========================
    FOOTER
    ========================= */
 
@@ -306,4 +420,9 @@ footer {
   .hero h2 {
     font-size: 42px;
   }
+
+  .order-section {
+    padding: 25px;
+  }
 }
+```

@@ -222,7 +222,7 @@
 
           <tr>
             <td>Material</td>
-            <td>Fiberglass</td>
+            <td>Fiberglass / Carbon / Kevlar</td>
           </tr>
 
           <tr>
@@ -237,13 +237,118 @@
 
           <tr>
             <td>Price</td>
-            <td>₱25,000</td>
+            <td>₱25,000 - 50</td>
           </tr>
 
         </table>
 
       </div>
+<<div class="order-section" id="order-form">
 
+  <h2>Order / Enquiry</h2>
+
+  <p class="order-intro">
+    Interested in this body kit? Fill out the form below
+    and let us know how we can assist you.
+  </p>
+
+  <form class="order-form">
+
+    <label for="quantity">Quantity</label>
+
+    <input
+      type="number"
+      id="quantity"
+      name="quantity"
+      min="1"
+      max="20"
+      required
+    >
+
+    <fieldset class="delivery-options">
+
+      <legend>Delivery method</legend>
+
+      <label class="radio-option" for="standard">
+        <input
+          type="radio"
+          id="standard"
+          name="delivery"
+          value="standard"
+        >
+        Standard delivery
+      </label>
+
+      <label class="radio-option" for="express">
+        <input
+          type="radio"
+          id="express"
+          name="delivery"
+          value="express"
+        >
+        Express delivery
+      </label>
+
+      <label class="radio-option" for="pickup">
+        <input
+          type="radio"
+          id="pickup"
+          name="delivery"
+          value="pickup"
+        >
+        Store pickup
+      </label>
+
+    </fieldset>
+
+    <p class="extras-title">Optional extras</p>
+
+    <label class="checkbox-option" for="gift-wrap">
+      <input
+        type="checkbox"
+        id="gift-wrap"
+        name="extras"
+        value="gift-wrap"
+      >
+      Gift wrapping
+    </label>
+
+    <label class="checkbox-option" for="express-handling">
+      <input
+        type="checkbox"
+        id="express-handling"
+        name="extras"
+        value="express-handling"
+      >
+      Express handling
+    </label>
+
+    <label class="checkbox-option" for="custom-note">
+      <input
+        type="checkbox"
+        id="custom-note"
+        name="extras"
+        value="custom-note"
+      >
+      Custom note
+    </label>
+
+    <label for="contact-email">Contact email</label>
+
+    <input
+      type="email"
+      id="contact-email"
+      name="contact-email"
+      required
+    >
+
+    <button type="submit">
+      Place order
+    </button>
+
+  </form>
+
+</div>
 
       <div class="back-button">
 

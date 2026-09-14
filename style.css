@@ -422,6 +422,11 @@ footer {
   }
 
   .order-section {
-    padding: 25px;
-  }
+  margin-top: 70px;
+  padding: 40px;
+  background: #151515;
+  border: 1px solid #292929;
+  border-top: 4px solid #d90429;
+  border-radius: 10px;
+}
 }

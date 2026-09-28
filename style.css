@@ -1,3 +1,7 @@
+:root {
+  --brand: #d90429;
+}
+
 /* =========================
    JWORKS AUTOCRAFT
    Main Website Style
@@ -26,7 +30,7 @@ body {
 
 header {
   background: #111;
-  border-bottom: 2px solid #d90429;
+  border-bottom: 2px solid var(--brand);
   padding: 20px 8%;
   display: flex;
   justify-content: space-between;
@@ -37,7 +41,7 @@ header {
 }
 
 header h1 {
-  color: #d90429;
+  color: var(--brand);
   font-size: 28px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -59,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #d90429;
+  color: var(--brand);
 }
 
 /* =========================
@@ -103,7 +107,7 @@ main {
 }
 
 .hero h2 span {
-  color: #d90429;
+  color: var(--brand);
 }
 
 .hero p {
@@ -147,7 +151,10 @@ main {
 .product-card {
   background: #151515;
   border: 1px solid #292929;
+  border-left: 4px solid var(--brand);
   border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
   overflow: hidden;
   transition: 0.3s;
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
@@ -155,7 +162,7 @@ main {
 
 .product-card:hover {
   transform: translateY(-8px);
-  border-color: #d90429;
+  border-color: var(--brand);
   box-shadow: 0 12px 30px rgba(217,4,41,0.18);
 }
 
@@ -178,7 +185,7 @@ main {
 }
 
 .price {
-  color: #d90429;
+  color: var(--brand);
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 15px;
@@ -197,7 +204,7 @@ main {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background: #d90429;
+  background: var(--brand);
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -227,7 +234,7 @@ main {
 }
 
 .page-content h3 {
-  color: #d90429;
+  color: var(--brand);
   font-size: 25px;
   margin-top: 40px;
   margin-bottom: 12px;
@@ -241,7 +248,7 @@ main {
 
 .owner-card {
   background: #151515;
-  border-left: 4px solid #d90429;
+  border-left: 4px solid var(--brand);
   padding: 25px;
   margin: 30px 0;
   border-radius: 5px;
@@ -264,7 +271,7 @@ main {
 }
 
 .contact-label {
-  color: #d90429;
+  color: var(--brand);
   font-weight: bold;
 }
 
@@ -277,7 +284,7 @@ main {
   padding: 40px;
   background: #151515;
   border: 1px solid #292929;
-  border-top: 4px solid #d90429;
+  border-top: 4px solid var(--brand);
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
@@ -304,7 +311,8 @@ main {
 }
 
 .order-form input[type="number"],
-.order-form input[type="email"] {
+.order-form input[type="email"],
+.order-form textarea {
   width: 100%;
   padding: 14px;
   background: #0d0d0d;
@@ -315,10 +323,11 @@ main {
   box-sizing: border-box;
 }
 
-.order-form input:focus {
-  outline: 2px solid #d90429;
+.order-form input:focus,
+.order-form textarea:focus {
+  outline: 3px solid var(--brand);
   outline-offset: 2px;
-  border-color: #d90429;
+  border-color: var(--brand);
 }
 
 .delivery-options {
@@ -330,7 +339,7 @@ main {
 }
 
 .delivery-options legend {
-  color: #d90429;
+  color: var(--brand);
   font-weight: bold;
   padding: 0 8px;
   text-transform: uppercase;
@@ -350,7 +359,7 @@ main {
 .checkbox-option input {
   width: 18px;
   height: 18px;
-  accent-color: #d90429;
+  accent-color: var(--brand);
 }
 
 .extras-title {
@@ -363,7 +372,7 @@ main {
 .order-form button {
   margin-top: 25px;
   padding: 15px 25px;
-  background: #d90429;
+  background: var(--brand);
   color: white;
   border: none;
   border-radius: 5px;
@@ -422,11 +431,7 @@ footer {
   }
 
   .order-section {
-  margin-top: 70px;
-  padding: 40px;
-  background: #151515;
-  border: 1px solid #292929;
-  border-top: 4px solid #d90429;
-  border-radius: 10px;
-}
+    margin-top: 70px;
+    padding: 40px;
+  }
 }
